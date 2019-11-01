@@ -25,3 +25,15 @@ ol>li{
 input[type=search]::-webkit-search-cancel-button {
     -webkit-appearance: searchfield-cancel-button;
 }
+
+@media (max-width: 1000px) {
+
+ol {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    height: 500px;
+    overflow: auto
+}
+
+}
