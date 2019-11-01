@@ -1,0 +1,39 @@
+{% load staticfiles %}
+<html lang="en">
+<head>
+<title>Fuzzy Word Search</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="/static/searchingapp/css/searching_page.css?v=2" rel="stylesheet">
+
+</head>
+<body style="background: gainsboro;">
+  <br>
+<div class="ui-widget">
+
+  <form id="search-form" method= "GET" style="margin:auto;max-width:300px">
+    <h2>Fuzzy Word Search</h2>
+     <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+          <div class="input-group">
+            <input id="search-id" type="search" placeholder="Search" name="search_input" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+            <button class="btn " type="submit"  style="background: transparent;"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+
+  </form>
+  <div class="search_result"  >
+        <ol class="columns" id="search_result_ol" data-columns="5" style="display:none">
+        </ol>
+        <p id="search_result_not_found" style="display:none" >No Data Found For the Search.</p>
+      </div>
+
+</div>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="static/searchingapp/js/searching_page.js?v=1"></script>
+
+</body>
+</html>
