@@ -19,8 +19,13 @@ from django.views.generic import TemplateView
 from searchingapp.views import FuzzySearch
 
 urlpatterns = [
+    # Rendering the landing page using template view
     path('', TemplateView.as_view(template_name="searchingapp/landing_page.html")),
+
+    # Request Type Get used for autoCompleting the searched input by user (Using Classed Based View)
     path('search/', FuzzySearch.as_view(call_type ='autocomplete'), name = 'search'),
+
+    # Request Type Get Which returns the 25 Filtered list of words
     path('searchAction/', FuzzySearch.as_view(call_type ='searchaction'), name='searchAction'),
     path('admin/', admin.site.urls), #django administration
 ]
