@@ -1,2 +1,2 @@
-web: gunicorn djangoherokuapp.wsgi --log-file -
+web: gunicorn fuzzysearch.wsgi --log-file -
 
