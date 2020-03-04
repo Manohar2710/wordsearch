@@ -76,13 +76,17 @@ WSGI_APPLICATION = 'fuzzysearch.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd4mh5uq9k8p9go',
+        'USER': 'cicxydzqckutaf',
+        'PASSWORD': '76ceb1b0dfd512351569c10eae87b382c9707484159e07dfd9efa26337231ac8',
+        'HOST': 'ec2-52-202-185-87.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
 
-# Password validation
+# Password validation5432
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
